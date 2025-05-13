@@ -66,9 +66,10 @@ body {
 .portfolio-item img,
 .portfolio-item video {
   width: 100%;
-  display: block;
-  max-height: 250px;
+  aspect-ratio: 1 / 1; /* Makes them square */
   object-fit: cover;
+  display: block;
+  border-bottom: 2px solid #00ffe1;
 }
 
 .item-info {
