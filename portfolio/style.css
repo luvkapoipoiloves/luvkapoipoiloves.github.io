@@ -8,10 +8,38 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #1e1e2f; /* ✅ Solid dark blue (from About page) */
+  background-color: #1c1c2b;
+  background-image: radial-gradient(circle at 20% 20%, rgba(0,255,225,0.08) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 80%, rgba(0,255,225,0.05) 0%, transparent 50%);
+  animation: pulseBackground 15s ease-in-out infinite;
   color: #fff;
   min-height: 100vh;
   line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.bg-video-full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.2; /* Adjust for readability */
+  pointer-events: none;
+}
+
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* darken effect */
+  z-index: -1;
 }
 
 /* ===== Global Styles ===== */
@@ -360,3 +388,4 @@ footer {
     transform: translateY(0);
   }
 }
+
