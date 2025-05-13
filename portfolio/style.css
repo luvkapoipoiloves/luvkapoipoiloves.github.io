@@ -185,10 +185,15 @@ img {
 }
 
 .item-info p {
+  text-align: justify;
   font-size: 0.95rem;
   color: #ccc;
 }
 
+.item-info a {
+  font-size: 0.95rem;
+  color: #00008b;
+}
 /* ===== Showreel Section ===== */
 .showreel-section {
   padding: 2rem;
